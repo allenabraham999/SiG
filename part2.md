@@ -105,7 +105,9 @@ Moving on to the code…
 ### **Checking Out the data and loading the CSV file.**
 <br>
 
-![](img/img_2.png)
+<p align="center">
+  <img  src="img/img_2.png">
+</p>
 
 
 Let's now begin to train the regression model! We will need to first split up our data into an X
@@ -113,14 +115,18 @@ array that contains the features to train on, and a y array with the target vari
 the Price column. We will toss out the Address column because it only has text info that the
 linear regression model can't use.
 
-![](img/img_3.png)
+<p align="center">
+  <img  src="img/img_3.png">
+</p>
 
 ### **Splitting the data set**
 Now we further split the dataset into training and testing sets. This is done so that the model
 won't
 Show bias by overfitting the dataset and we get to know the true accuracy of the model.
 
-![](img/img_4.png)
+<p align="center">
+  <img  src="img/img_4.png">
+</p>
 
 ### **Creating and Training the model**
 <br>
