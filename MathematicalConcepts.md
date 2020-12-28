@@ -11,7 +11,7 @@ advertisements). We can model the relationship between the two as:
 ![alt text](https://github.com/allenabraham999/SiG/blob/main/images-2/Img1.jpg)
 
 β0 and β1 are the intercept and the slope respectively, and combined are the
-coefficients or parameters of this model. We use the [training data to](https://www.techopedia.com/definition/33181/training-data#:~:text=The%20training%20data%20is%20an,called%20validation%20and%20testing%20sets.) create estimates of these
+coefficients or parameters of this model. We use the [training data](https://www.techopedia.com/definition/33181/training-data#:~:text=The%20training%20data%20is%20an,called%20validation%20and%20testing%20sets.) to create estimates of these
 values( here, 0 and 1
 ), hence we don't use the normal '=' sign, and then we can use them to
 predict company sales for potential spending on advertisements. You can see how that might be
