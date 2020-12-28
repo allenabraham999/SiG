@@ -11,7 +11,7 @@ advertisements). We can model the relationship between the two as:
 ![alt text](https://github.com/allenabraham999/SiG/blob/main/images-2/Img1.jpg)
 
 β0 and β1 are the intercept and the slope respectively, and combined are the
-coefficients or parameters of this model. We use the training data to create estimates of these
+coefficients or parameters of this model. We use the [training data to](https://www.techopedia.com/definition/33181/training-data#:~:text=The%20training%20data%20is%20an,called%20validation%20and%20testing%20sets.) create estimates of these
 values( here, 0 and 1
 ), hence we don't use the normal '=' sign, and then we can use them to
 predict company sales for potential spending on advertisements. You can see how that might be
@@ -147,7 +147,7 @@ mentioned in the descriptions aren't relevant, they're just normal datasets), fo
 expense.
 But computational issues aside, it turns out that k-fold cross-validation more often gives accurate
 estimates of the true test error rate than LOOCV (This can't be seen very well in the above
-diagram, but it happens quite a lot). This relates to the bias-variance tradeoff.
+diagram, but it happens quite a lot). This relates to the [bias-variance tradeoff](https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229).
 As we stated above, the validation set approach will overestimate the test error rate, while
 LOOCV, where every training set is n - 1 in length, will give a more accurate (or less biased)
 estimate. So k-fold cross-validation would have an intermediate level of bias, and from this angle,
