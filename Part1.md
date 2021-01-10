@@ -56,7 +56,7 @@ The main difference between Regression and Classification algorithms that Regres
    The task of the Regression algorithm is to find the mapping function to map the input variable(x) to the continuous output variable(y).
 
    Example: Suppose we want to do weather forecasting, so for this, we will use the Regression algorithm. In weather prediction, the model is trained on the past data, and once    the training is completed, it can easily predict the weather for future days.
-
+***
  At its core, ML is about using algorithms to analyze and predict patterns in data. If a computer is given a set of data about the heights and weights of different people, and    we want to use that to predict someone's height using just their weight, then we train the computer on the data we do have, so that it can have a decent understanding of the    correlation between height and weight. How does it do that?
 
 The answer is Math.
