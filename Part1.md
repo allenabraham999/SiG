@@ -38,10 +38,26 @@ decisions, without being explicitly told how to.
 simplified levels. Does that sound confusing? Don't worry, it'll make sense when it's explained. DL is technically a 
 section of ML, but it's grown so large in itself that it's worth mentioning separately.
 
-### Introduction to Machine Learning
+## Introduction to Machine Learning
 Machine Learning comprises a large group of methods by which a computer can learn from data, so here, we'll look at what those methods are doing.
 
-At its core, ML is about using algorithms to analyze and predict patterns in data. If a computer is given a set of data about the heights and weights of different people, and we want to use that to predict someone's height using just their weight, then we train the computer on the data we do have, so that it can have a decent understanding of the correlation between height and weight. How does it do that?
+#### Regression And Classification.
+The main difference between Regression and Classification algorithms that Regression algorithms are used to predict the continuous values such as price, salary, age, etc. and Classification algorithms are used to predict/Classify the discrete values such as Male or Female, True or False, Spam or Not Spam, etc.
+
+  ##### Classification
+   Classification is a process of finding a function which helps in dividing the dataset into classes based on different parameters. In Classification, a computer program is        trained on the training dataset and based on that training, it categorizes the data into different classes.
+
+   The task of the classification algorithm is to find the mapping function to map the input(x) to the discrete output(y).
+
+   Example: The best example to understand the Classification problem is Email Spam Detection. The model is trained on the basis of millions of emails on different parameters,      and whenever it receives a new email, it identifies whether the email is spam or not. If the email is spam, then it is moved to the Spam folder.
+  ##### Regression
+   Regression is a process of finding the correlations between dependent and independent variables. It helps in predicting the continuous variables such as prediction of Market    Trends, prediction of House prices, etc.
+
+   The task of the Regression algorithm is to find the mapping function to map the input variable(x) to the continuous output variable(y).
+
+   Example: Suppose we want to do weather forecasting, so for this, we will use the Regression algorithm. In weather prediction, the model is trained on the past data, and once    the training is completed, it can easily predict the weather for future days.
+
+ At its core, ML is about using algorithms to analyze and predict patterns in data. If a computer is given a set of data about the heights and weights of different people, and    we want to use that to predict someone's height using just their weight, then we train the computer on the data we do have, so that it can have a decent understanding of the    correlation between height and weight. How does it do that?
 
 The answer is Math.
 
@@ -60,6 +76,36 @@ That is the basic idea of Machine Learning. You give the computer a lot of data 
 You might have noticed that the predicted value of Y isn't *exactly* the same as the actual value. Now, if we need a more 
 accurate value, we will have to construct a graph with more complex patterns and the position of individual data points 
 will influence our result, which makes the precision more complicated. That is where Machine Learning shows its real colour!
+
+#### Supervised And Unsupervised Learning.
+##### Supervised 
+Supervised learning as the name indicates the presence of a supervisor as a teacher. Basically supervised learning is a learning in which we teach or train the machine using data which is well labeled that means some data is already tagged with the correct answer. After that, the machine is provided with a new set of examples(data) so that supervised learning algorithm analyses the training data(set of training examples) and produces a correct outcome from labeled data.
+
+##### Unsupervised
+Unsupervised learning is the training of machine using information that is neither classified nor labeled and allowing the algorithm to act on that information without guidance. Here the task of machine is to group unsorted information according to similarities, patterns and differences without any prior training of data. 
+
+Unlike supervised learning, no teacher is provided that means no training will be given to the machine. Therefore machine is restricted to find the hidden structure in unlabeled data by our-self. 
+
+For instance, suppose it is given an image having both dogs and cats which have not seen ever. 
+Thus the machine has no idea about the features of dogs and cat so we can’t categorize it in dogs and cats. But it can categorize them according to their similarities, patterns, and differences i.e., we can easily categorize the above picture into two parts. First first may contain all pics having dogs in it and second part may contain all pics having cats in it. Here you didn’t learn anything before, means no training data or examples. 
+
+ It allows the model to work on its own to discover patterns and information that was previously undetected. It mainly deals with unlabelled data.
+
+Unsupervised learning classified into two categories of algorithms: 
+ 
+
+* Clustering: A clustering problem is where you want to discover the inherent groupings in the data, such as grouping customers by purchasing behavior.
+* Association: An association rule learning problem is where you want to discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
+
+
+
+#### BIAS AND VARIANCE
+##### BIAS
+Bias is the difference between the average prediction of our model and the correct value which we are trying to predict. Model with high bias pays very little attention to the training data and oversimplifies the model. It always leads to high error on training and test data.
+##### VARIANCE
+Variance is the variability of model prediction for a given data point or a value which tells us spread of our data. Model with high variance pays a lot of attention to training data and does not generalize on the data which it hasn’t seen before. As a result, such models perform very well on training data but has high error rates on test data.
+
+
 
 #### In the Real World
 Of course, in real-world situations, there are way more than 2 variables. The complexity of ML, and the reason it's still growing as a field, is because computer models are growing ever larger and that complexity is what gives us new features every day.
@@ -109,6 +155,10 @@ Then this operation would identify vertical lines in an image. Like these, deep 
 This kind of operation is called a ​**convolution**​ or a​ **filter**​, used in one of the most popular forms of deep learning, convolutional neural networks (CNNs). In other words, a convolution is an operation done on an image to simplify it into more familiar concepts such as "horizontal line" or "circle" or the like.
 
 When many convolutions like these are stacked together, a computer can, from a group of pixels, understand the presence of complicated images like a vehicle, or a person. This cascading series of convolutions form what's known as a neural net.
+
+
+
+
 
 #### Other Applications
 Imagine if you could apply this principle to a video game. The computer would read the image on the screen, identify obstacles and enemies, and choose movements and actions to optimize its position almost perfectly, at every frame.
